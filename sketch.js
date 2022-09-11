@@ -277,7 +277,7 @@ function steer(agent, targetDirection, strength=1) {
 //----------------------------------------------
 function separate(agent, group, strength=1) {
   
-  let separation = 40;  // radius neightbourhood/sensorium
+  let separation = settings.size + 80;  // radius neightbourhood/sensorium
   
   let sum = new p5.Vector(); 
   let count = 0;
@@ -304,7 +304,7 @@ function separate(agent, group, strength=1) {
 //----------------------------------------------
 function align(agent, group, strength=1) {
    
-  let neighborhood = settings.size;  // radius neightbourhood/sensorium
+  let neighborhood = settings.size+80;  // radius neightbourhood/sensorium
   
   let sum = new p5.Vector(); 
   let count = 0;
@@ -330,7 +330,7 @@ function align(agent, group, strength=1) {
 //----------------------------------------------
 function cohesion(agent, group, strength=1) {
    
-  let neighborhood = settings.size; 
+  let neighborhood = settings.size+80;  // radius neightbourhood/sensorium
   
   let sum = new p5.Vector(); 
   let count = 0;
