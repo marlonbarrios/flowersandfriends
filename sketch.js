@@ -304,7 +304,7 @@ function separate(agent, group, strength=1) {
 //----------------------------------------------
 function align(agent, group, strength=1) {
    
-  let neighborhood = 50;  // radius neightbourhood/sensorium
+  let neighborhood = settings.size;  // radius neightbourhood/sensorium
   
   let sum = new p5.Vector(); 
   let count = 0;
@@ -330,7 +330,7 @@ function align(agent, group, strength=1) {
 //----------------------------------------------
 function cohesion(agent, group, strength=1) {
    
-  let neighborhood = 50; 
+  let neighborhood = settings.size; 
   
   let sum = new p5.Vector(); 
   let count = 0;
